@@ -3,7 +3,7 @@
         "id": "45sd4fsd6",
         "name": "Pantalón largo cargo ECOFRIENDS chico",
         "category": [
-            "pantalón",
+            "pantalon",
             "largo",
             "ecofriends",
             "chico"
@@ -17,11 +17,11 @@
         "id": "45sdfbcx56",
         "name": "Pantalón largo sarga skinny fit niño",
         "category": [
-            "pantalón",
+            "pantalon",
             "largo",
             "sarga",
             "skinny",
-            " niño"
+            "nino"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/pantalon-largo-sarga-skinny-fit-nino_id_22-03579-010-M-2.JPG",
         "price": 27.99,
@@ -32,10 +32,10 @@
         "id": "45s454sdff",
         "name": "Pantalón largo chándal básico chico",
         "category": [
-            "pantalón",
+            "pantalon",
             "largo",
-            "chándal",
-            "básico",
+            "chandal",
+            "basico",
             "chico"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/pantalon-largo-chandal-basico-chico_id_22-00744-034-M-3.JPG",
@@ -47,11 +47,11 @@
         "id": "45s454fg3324",
         "name": "Pantalón largo lino sarga niño",
         "category": [
-            "pantalón",
+            "pantalon",
             "largo",
             "lino",
             "sarga",
-            "niño"
+            "nino"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/pantalon-largo-lino-sarga-nino_id_22-03577-029-M-3.JPG",
         "price": 29.99,
@@ -62,11 +62,11 @@
         "id": "45s454123e",
         "name": "Pantalón largo lino sarga niño",
         "category": [
-            "pantalón",
+            "pantalon",
             "largo",
             "lino",
             "sarga",
-            "niño"
+            "nino"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/pantalon-largo-denim-ecofriends-suave-nino_id_22-03578-093-M-3.JPG",
         "price": 24.99,
@@ -77,13 +77,12 @@
         "id": "45s4543234f",
         "name": "Pantalón largo sarga skinny fit niño",
         "category": [
-            "pantalón",
+            "pantalon",
             "largo",
             "skinny",
             "sarga",
-            "niño",
-            "fit",
-            "niño"
+            "nino",
+            "fit"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/pantalon-largo-sarga-skinny-fit-nino_id_22-03579-011-L-1.JPG",
         "price": 27.99,
@@ -94,12 +93,12 @@
         "id": "46fge412r",
         "name": "Pantalón largo tejano ECOFRIENDS skinny fit niño",
         "category": [
-            "pantalón",
+            "pantalon",
             "largo",
             "ecofriends",
             "skinny",
             "tejano",
-            "niño",
+            "nino",
             "fit"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/pantalon-largo-tejano-ecofriends-skinny-fit-nino_id_22-03582-023-L-3.JPG",
@@ -111,10 +110,10 @@
         "id": "46fgdsf98r",
         "name": "Pantalón sarga slim fit largo niño",
         "category": [
-            "pantalón",
+            "pantalon",
             "sarga",
             "slim",
-            "niño",
+            "nino",
             "fit",
             "largo"
         ],
@@ -131,7 +130,7 @@
             "manga",
             "corta",
             "rayas",
-            "niño"
+            "nino"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/polo-manga-corta-rayas-nino_id_22-03110-031-L-3.JPG?v=20211124151058",
         "price": 20.99,
@@ -147,7 +146,7 @@
             "ecofriends",
             "corta",
             "estampado",
-            "niño"
+            "nino"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/polo-manga-corta-ecofriends-estampado-nino_id_22-03102-043-L-3.JPG?v=20211028134310",
         "price": 22.99,
@@ -164,7 +163,7 @@
             "corta",
             "estampado",
             "mini ",
-            "niño"
+            "nino"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/polo-manga-corta-ecofriends-mini-estampado-nino_id_22-03107-093-L-2.JPG?v=20211105160303",
         "price": 22.99,
@@ -179,7 +178,7 @@
             "manga",
             "bordado",
             "corta",
-            "niño"
+            "nino"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/polo-manga-corta-bordado-nino_id_22-03105-060-L-3.JPG?v=20211026074822",
         "price": 23.99,
@@ -193,9 +192,9 @@
             "polo",
             "manga",
             "ecofriends",
-            "gráfica",
+            "grafica",
             "corta",
-            "niño"
+            "nino"
         ],
         "image": "https://media.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/polo-manga-corta-ecofriends-grafica-nino_id_22-03109-025-L-3.JPG?v=20211026074823",
         "price": 22.99,
@@ -301,7 +300,7 @@
             "larga",
             "ecofriends",
             "estampada",
-            "niño"
+            "nino"
         ],
         "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/camisa-manga-larga-ecofriends-estampada-nino_id_22-03123-046-L-3.JPG?v=20211026074824",
         "price": 32.99,

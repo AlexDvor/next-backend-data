@@ -4,6 +4,7 @@
         "name": "Pantalón largo cargo ECOFRIENDS chico",
         "category": [
             "pantalon",
+            "pantalones",
             "largo",
             "ecofriends",
             "chico"
@@ -18,6 +19,7 @@
         "name": "Pantalón largo sarga skinny fit niño",
         "category": [
             "pantalon",
+            "pantalones",
             "largo",
             "sarga",
             "skinny",
@@ -33,6 +35,7 @@
         "name": "Pantalón largo chándal básico chico",
         "category": [
             "pantalon",
+            "pantalones",
             "largo",
             "chandal",
             "basico",
@@ -48,6 +51,7 @@
         "name": "Pantalón largo lino sarga niño",
         "category": [
             "pantalon",
+            "pantalones",
             "largo",
             "lino",
             "sarga",
@@ -63,6 +67,7 @@
         "name": "Pantalón largo lino sarga niño",
         "category": [
             "pantalon",
+            "pantalones",
             "largo",
             "lino",
             "sarga",
@@ -78,6 +83,7 @@
         "name": "Pantalón largo sarga skinny fit niño",
         "category": [
             "pantalon",
+            "pantalones",
             "largo",
             "skinny",
             "sarga",
@@ -94,6 +100,7 @@
         "name": "Pantalón largo tejano ECOFRIENDS skinny fit niño",
         "category": [
             "pantalon",
+            "pantalones",
             "largo",
             "ecofriends",
             "skinny",
@@ -111,6 +118,7 @@
         "name": "Pantalón sarga slim fit largo niño",
         "category": [
             "pantalon",
+            "pantalones",
             "sarga",
             "slim",
             "nino",
@@ -127,6 +135,7 @@
         "name": "Polo manga corta rayas niño",
         "category": [
             "polo",
+            "polos",
             "manga",
             "corta",
             "rayas",
@@ -142,6 +151,7 @@
         "name": "Polo manga corta ECOFRIENDS estampado niño",
         "category": [
             "polo",
+            "polos",
             "manga",
             "ecofriends",
             "corta",
@@ -158,6 +168,7 @@
         "name": "Polo manga corta ECOFRIENDS mini estampado niño",
         "category": [
             "polo",
+            "polos",
             "manga",
             "ecofriends",
             "corta",
@@ -175,6 +186,7 @@
         "name": "Polo manga corta bordado niño",
         "category": [
             "polo",
+            "polos",
             "manga",
             "bordado",
             "corta",
@@ -190,6 +202,7 @@
         "name": "Polo manga corta ECOFRIENDS gráfica niño",
         "category": [
             "polo",
+            "polos",
             "manga",
             "ecofriends",
             "grafica",
@@ -206,6 +219,7 @@
         "name": "Camisa manga corta ECOFRIENDS",
         "category": [
             "camisa",
+            "camisas",
             "manga",
             "ecofriends",
             "corta"
@@ -220,6 +234,7 @@
         "name": "Camisa manga larga tejana chico",
         "category": [
             "camisa",
+            "camisas",
             "manga",
             "larga",
             "tejana",
@@ -235,6 +250,7 @@
         "name": "Camisa manga corta ECOFRIENDS estampada chico",
         "category": [
             "camisa",
+            "camisas",
             "manga",
             "corta",
             "ecofriends",
@@ -251,6 +267,7 @@
         "name": "Camisa manga larga ECOFRIENDS estampada chico",
         "category": [
             "camisa",
+            "camisas",
             "manga",
             "larga",
             "ecofriends",
@@ -267,6 +284,7 @@
         "name": "Camiseta manga corta ECOFRIENDS future chico",
         "category": [
             "camiseta",
+            "camisetas",
             "manga",
             "corta",
             "ecofriends",
@@ -283,6 +301,7 @@
         "name": "Chaleco acolchado chico",
         "category": [
             "chaleco",
+            "chalecos",
             "acolchado",
             "chico"
         ],
@@ -296,6 +315,7 @@
         "name": "Camisa manga larga ECOFRIENDS estampada niño",
         "category": [
             "camisa",
+            "camisas",
             "manga",
             "larga",
             "ecofriends",

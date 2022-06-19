@@ -102,5 +102,69 @@
         "price": 22.99,
         "discount": 0,
         "quantity": 0
+    },
+    {
+        "id": "3hj6411354",
+        "name": "Camisa manga corta ECOFRIENDS",
+        "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/camisa-manga-corta-ecofriends-dip-dye-chico_id_22-06111-002-L-3.JPG?v=20211026142907",
+        "price": 23.99,
+        "discount": 10,
+        "quantity": 0
+    },
+    {
+        "id": "3hj641135o2",
+        "name": "Camisa manga larga tejana chico",
+        "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/camisa-manga-larga-tejana-chico_id_22-06118-060-L-2.JPG?v=20211026142923",
+        "price": 24.99,
+        "discount": 0,
+        "quantity": 0
+    },
+    {
+        "id": "3hjfsd4b2",
+        "name": "Camisa manga corta ECOFRIENDS estampada chico",
+        "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/camisa-manga-corta-ecofriends-estampada-chico_id_22-06113-071-L-3.JPG?v=20211026142912",
+        "price": 22.99,
+        "discount": 0,
+        "quantity": 0
+    },
+    {
+        "id": "3hjfsd45356",
+        "name": "Camisa manga larga ECOFRIENDS estampada chico",
+        "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/camisa-manga-larga-ecofriends-estampada-chico_id_22-06116-046-L-1.JPG?v=20211021101540",
+        "price": 24.99,
+        "discount": 0,
+        "quantity": 0
+    },
+    {
+        "id": "3h2333ds56",
+        "name": "Camiseta manga corta tie dye chico",
+        "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/camiseta-manga-corta-tie-dye-chico_id_22-06003-079-L-1.JPG?v=20211102172124",
+        "price": 14.99,
+        "discount": 0,
+        "quantity": 0
+    },
+    {
+        "id": "3h233aa333",
+        "name": "Camiseta manga corta print chico",
+        "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/camiseta-manga-corta-tie-dye-chico_id_22-06003-079-L-1.JPG?v=20211102172124",
+        "price": 13.99,
+        "discount": 0,
+        "quantity": 0
+    },
+    {
+        "id": "3h233d3433zx",
+        "name": "Camiseta manga corta ECOFRIENDS future chico",
+        "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/camiseta-manga-corta-ecofriends-future-chico_id_22-06009-046-L-4.JPG?v=20211026090348",
+        "price": 13.99,
+        "discount": 0,
+        "quantity": 0
+    },
+    {
+        "id": "3h233d3433zx",
+        "name": "Chaleco acolchado chico",
+        "image": "https://www.mayoral.com/wcsstore/mayoral/images/catalog/mayoral/chaleco-acolchado-chico_id_22-06325-089-L-1.JPG?v=20211021101540",
+        "price": 33.99,
+        "discount": 10,
+        "quantity": 0
     }
 ]

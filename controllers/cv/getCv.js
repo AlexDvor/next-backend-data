@@ -11,17 +11,3 @@ const getCV = async (req, res, next) => {
 };
 
 module.exports = getCV;
-
-// const getCV = async (req, res, next) => {
-//   try {
-//     res.json({
-//       data: DB,
-//     });
-//   } catch (error) {
-//     next(error);
-//   }
-// };
-
-// module.exports = getCV;
-
-// const avatarsDir = path.join(__dirname, "../../", "public", "avatars");

@@ -6,6 +6,7 @@ require("dotenv").config();
 
 const mayoralRouter = require("./routes/api/mayoral");
 const dataRouter = require("./routes/api/items");
+const cvRouter = require("./routes/api/cv");
 
 const app = express();
 
@@ -18,6 +19,7 @@ app.use(express.static("public"));
 
 app.use("/api/mayoral", mayoralRouter);
 app.use("/api/data", dataRouter);
+app.use("/api/cv", cvRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: "Not found" });

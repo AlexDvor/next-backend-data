@@ -5,7 +5,7 @@ const getCV = async (req, res, next) => {
     const file = path.join(__dirname, "../../", "data", "cv.pdf");
     res.download(file);
     const { data } = req.body;
-    const result = await Cv.create({
+    await Cv.create({
       data,
     });
   } catch (error) {

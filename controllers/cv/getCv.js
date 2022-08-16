@@ -9,9 +9,9 @@ const getCV = async (req, res, next) => {
   } catch (error) {
     next(error);
   } finally {
-    const currentTime = fns.format(new Date(), "dd/MM/yy HH:mm");
-    await Cv.create({
-      data: currentTime,
+    const { data } = req.body;
+    const res = await Cv.create({
+      data,
     });
   }
 };

@@ -42,7 +42,7 @@ const updateStats = async (req, res, next) => {
     }
 
     res.json({
-      message: "Pass process",
+      message: "Bad request",
     });
   } catch (error) {
     next(error);

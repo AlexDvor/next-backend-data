@@ -3,6 +3,7 @@ const { data } = require("../../helpers/constants");
 const { DB_ID } = process.env;
 const updateWatchedStats = require("../../helpers/updateWatchedStats");
 const updateCodeStats = require("../../helpers/updateCodeStats");
+const updateTotalViewPage = require("../../helpers/updateTotalViewPage");
 
 const updateStats = async (req, res, next) => {
   const { sectionList } = data;
@@ -26,6 +27,14 @@ const updateStats = async (req, res, next) => {
           data: "code",
         });
       }
+    }
+
+    if (!section || !app || !time) {
+      const result = await updateTotalViewPage(stats);
+      res.json({
+        data: result,
+        message: "Empty",
+      });
     }
   } catch (error) {
     next(error);

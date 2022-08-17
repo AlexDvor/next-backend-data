@@ -62,6 +62,7 @@ const cvResultSchema = new Schema(
         time: { type: String, required: [true, "Name is required"] },
       },
     },
+    total: { type: String, required: [true, "Name is required"] },
   },
   { versionKey: false }
 );

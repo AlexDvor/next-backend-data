@@ -8,18 +8,19 @@ const updateTotalViewPage = require("../../helpers/updateTotalViewPage");
 const updateStats = async (req, res, next) => {
   const { sectionList } = data;
   try {
-    const { section, app, time } = req.query;
+    const { section = "", app = "", time = "" } = req.query;
     const stats = await Result.findById(DB_ID);
 
     if (section === sectionList.w) {
       const result = await updateWatchedStats(stats, app, time);
-
       if (result) {
         res.json({
           data: "watched",
         });
       }
+      return;
     }
+
     if (section === sectionList.c) {
       const result = await updateCodeStats(stats, app, time);
       if (result) {
@@ -27,15 +28,22 @@ const updateStats = async (req, res, next) => {
           data: "code",
         });
       }
+      return;
     }
 
     if (!section || !app || !time) {
       const result = await updateTotalViewPage(stats);
-      res.json({
-        data: result,
-        message: "Empty",
-      });
+      if (result)
+        res.json({
+          message: "Updated total value",
+        });
+
+      return;
     }
+
+    res.json({
+      message: "Pass process",
+    });
   } catch (error) {
     next(error);
   } finally {

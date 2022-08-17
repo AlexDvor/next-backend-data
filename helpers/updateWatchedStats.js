@@ -6,7 +6,7 @@ const updateWatchedStats = async (value, name, time) => {
   const { fieldList } = data;
   try {
     if (name === fieldList.watch) {
-      const result = value.watched.watchtrailer;
+      const result = value.watched.watchtrailer.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -14,14 +14,15 @@ const updateWatchedStats = async (value, name, time) => {
         },
         {
           $set: {
-            "watched.watchtrailer": updateResult,
+            "watched.watchtrailer.opened": updateResult,
+            "watched.watchtrailer.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.user_app) {
-      const result = value.watched.usersapp;
+      const result = value.watched.usersapp.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -29,14 +30,15 @@ const updateWatchedStats = async (value, name, time) => {
         },
         {
           $set: {
-            "watched.usersapp": updateResult,
+            "watched.usersapp.opened": updateResult,
+            "watched.usersapp.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.barbershop) {
-      const result = value.watched.barbershop;
+      const result = value.watched.barbershop.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -44,14 +46,15 @@ const updateWatchedStats = async (value, name, time) => {
         },
         {
           $set: {
-            "watched.barbershop": updateResult,
+            "watched.barbershop.opened": updateResult,
+            "watched.barbershop.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.movie_gallery) {
-      const result = value.watched.moviegallery;
+      const result = value.watched.moviegallery.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -59,14 +62,15 @@ const updateWatchedStats = async (value, name, time) => {
         },
         {
           $set: {
-            "watched.moviegallery": updateResult,
+            "watched.moviegallery.opened": updateResult,
+            "watched.moviegallery.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.web_studio) {
-      const result = value.watched.webstudio;
+      const result = value.watched.webstudio.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -74,14 +78,15 @@ const updateWatchedStats = async (value, name, time) => {
         },
         {
           $set: {
-            "watched.webstudio": updateResult,
+            "watched.webstudio.opened": updateResult,
+            "watched.webstudio.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.kapusta) {
-      const result = value.watched.kapusta;
+      const result = value.watched.kapusta.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -89,14 +94,15 @@ const updateWatchedStats = async (value, name, time) => {
         },
         {
           $set: {
-            "watched.kapusta": updateResult,
+            "watched.kapusta.opened": updateResult,
+            "watched.kapusta.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.hellen) {
-      const result = value.watched.hellen;
+      const result = value.watched.hellen.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -104,7 +110,8 @@ const updateWatchedStats = async (value, name, time) => {
         },
         {
           $set: {
-            "watched.hellen": updateResult,
+            "watched.hellen.opened": updateResult,
+            "watched.hellen.time": time,
           },
         }
       );

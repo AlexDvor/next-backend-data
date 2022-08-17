@@ -8,10 +8,11 @@ const updateStats = async (req, res, next) => {
   const { sectionList } = data;
   try {
     const { section, app, time } = req.query;
-    const dataId = await Result.findById(DB_ID);
+    const stats = await Result.findById(DB_ID);
 
     if (section === sectionList.w) {
-      const result = await updateWatchedStats(dataId, app);
+      const result = await updateWatchedStats(stats, app, time);
+
       if (result) {
         res.json({
           data: "watched",
@@ -19,7 +20,7 @@ const updateStats = async (req, res, next) => {
       }
     }
     if (section === sectionList.c) {
-      const result = await updateCodeStats(dataId, app, time);
+      const result = await updateCodeStats(stats, app, time);
       if (result) {
         res.json({
           data: "code",
@@ -52,5 +53,28 @@ module.exports = updateStats;
 //     barbershop: "0",
 //     kapusta: "0",
 //     hellen: "0",
+//   },
+// });
+
+// const result = await Result.create({
+//   code: {
+//     watchtrailer: { opened: "0", time: "0" },
+//     usersapp: { opened: "0", time: "0" },
+//     moviegallery: { opened: "0", time: "0" },
+//     webstudio: { opened: "0", time: "0" },
+//     barbershop: { opened: "0", time: "0" },
+//     kapusta: { opened: "0", time: "0" },
+//     hellen: { opened: "0", time: "0" },
+//     hellen: { opened: "0", time: "0" },
+//   },
+//   watched: {
+//     watchtrailer: { opened: "0", time: "0" },
+//     usersapp: { opened: "0", time: "0" },
+//     moviegallery: { opened: "0", time: "0" },
+//     webstudio: { opened: "0", time: "0" },
+//     barbershop: { opened: "0", time: "0" },
+//     kapusta: { opened: "0", time: "0" },
+//     hellen: { opened: "0", time: "0" },
+//     hellen: { opened: "0", time: "0" },
 //   },
 // });

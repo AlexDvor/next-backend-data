@@ -6,7 +6,7 @@ const updateCodeStats = async (value, name, time) => {
   const { fieldList } = data;
   try {
     if (name === fieldList.watch) {
-      const result = value.code.watchtrailer;
+      const result = value.code.watchtrailer.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -14,14 +14,15 @@ const updateCodeStats = async (value, name, time) => {
         },
         {
           $set: {
-            "code.watchtrailer": updateResult,
+            "code.watchtrailer.opened": updateResult,
+            "code.watchtrailer.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.user_app) {
-      const result = value.code.usersapp;
+      const result = value.code.usersapp.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -29,14 +30,15 @@ const updateCodeStats = async (value, name, time) => {
         },
         {
           $set: {
-            "code.usersapp": updateResult,
+            "code.usersapp.opened": updateResult,
+            "code.usersapp.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.barbershop) {
-      const result = value.code.barbershop;
+      const result = value.code.barbershop.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -44,29 +46,31 @@ const updateCodeStats = async (value, name, time) => {
         },
         {
           $set: {
-            "code.barbershop": updateResult,
+            "code.barbershop.opened": updateResult,
+            "code.barbershop.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.movie_gallery) {
-      const result = value.code.moviegallery;
+      const result = value.code.moviegallery.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
-          _id: id,
+          _id: DB_ID,
         },
         {
           $set: {
-            "code.moviegallery": updateResult,
+            "code.moviegallery.opened": updateResult,
+            "code.moviegallery.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.web_studio) {
-      const result = value.code.webstudio;
+      const result = value.code.webstudio.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -74,14 +78,15 @@ const updateCodeStats = async (value, name, time) => {
         },
         {
           $set: {
-            "code.webstudio": updateResult,
+            "code.webstudio.opened": updateResult,
+            "code.webstudio.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.kapusta) {
-      const result = value.code.kapusta;
+      const result = value.code.kapusta.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -89,14 +94,15 @@ const updateCodeStats = async (value, name, time) => {
         },
         {
           $set: {
-            "code.kapusta": updateResult,
+            "code.kapusta.opened": updateResult,
+            "code.kapusta.time": time,
           },
         }
       );
       return response;
     }
     if (name === fieldList.hellen) {
-      const result = value.code.hellen;
+      const result = value.code.hellen.opened;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -104,7 +110,8 @@ const updateCodeStats = async (value, name, time) => {
         },
         {
           $set: {
-            "code.hellen": updateResult,
+            "code.hellen.opened": updateResult,
+            "code.hellen.time": time,
           },
         }
       );

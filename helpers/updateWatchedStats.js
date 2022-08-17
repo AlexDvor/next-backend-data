@@ -2,11 +2,11 @@ const { Result } = require("../models");
 const { data } = require("./constants");
 const { DB_ID } = process.env;
 
-const updateCodeDB = async (value, name, time) => {
+const updateWatchedStats = async (value, name, time) => {
   const { fieldList } = data;
   try {
     if (name === fieldList.watch) {
-      const result = value.code.watchtrailer;
+      const result = value.watched.watchtrailer;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -14,14 +14,14 @@ const updateCodeDB = async (value, name, time) => {
         },
         {
           $set: {
-            "code.watchtrailer": updateResult,
+            "watched.watchtrailer": updateResult,
           },
         }
       );
       return response;
     }
     if (name === fieldList.user_app) {
-      const result = value.code.usersapp;
+      const result = value.watched.usersapp;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -29,14 +29,14 @@ const updateCodeDB = async (value, name, time) => {
         },
         {
           $set: {
-            "code.usersapp": updateResult,
+            "watched.usersapp": updateResult,
           },
         }
       );
       return response;
     }
     if (name === fieldList.barbershop) {
-      const result = value.code.barbershop;
+      const result = value.watched.barbershop;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -44,29 +44,29 @@ const updateCodeDB = async (value, name, time) => {
         },
         {
           $set: {
-            "code.barbershop": updateResult,
+            "watched.barbershop": updateResult,
           },
         }
       );
       return response;
     }
     if (name === fieldList.movie_gallery) {
-      const result = value.code.moviegallery;
+      const result = value.watched.moviegallery;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
-          _id: id,
+          _id: DB_ID,
         },
         {
           $set: {
-            "code.moviegallery": updateResult,
+            "watched.moviegallery": updateResult,
           },
         }
       );
       return response;
     }
     if (name === fieldList.web_studio) {
-      const result = value.code.webstudio;
+      const result = value.watched.webstudio;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -74,14 +74,14 @@ const updateCodeDB = async (value, name, time) => {
         },
         {
           $set: {
-            "code.webstudio": updateResult,
+            "watched.webstudio": updateResult,
           },
         }
       );
       return response;
     }
     if (name === fieldList.kapusta) {
-      const result = value.code.kapusta;
+      const result = value.watched.kapusta;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -89,14 +89,14 @@ const updateCodeDB = async (value, name, time) => {
         },
         {
           $set: {
-            "code.kapusta": updateResult,
+            "watched.kapusta": updateResult,
           },
         }
       );
       return response;
     }
     if (name === fieldList.hellen) {
-      const result = value.code.hellen;
+      const result = value.watched.hellen;
       const updateResult = Number(result) + 1;
       const response = await Result.updateOne(
         {
@@ -104,7 +104,7 @@ const updateCodeDB = async (value, name, time) => {
         },
         {
           $set: {
-            "code.hellen": updateResult,
+            "watched.hellen": updateResult,
           },
         }
       );
@@ -115,4 +115,4 @@ const updateCodeDB = async (value, name, time) => {
   }
 };
 
-module.exports = updateCodeDB;
+module.exports = updateWatchedStats;

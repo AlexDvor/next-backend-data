@@ -1,28 +1,28 @@
 const { Result } = require("../../models");
 const { data } = require("../../helpers/constants");
 const { DB_ID } = process.env;
-const updateWatchedDB = require("../../helpers/updateWatchedDB");
-const updateCodeDB = require("../../helpers/updateCodeDB");
+const updateWatchedStats = require("../../helpers/updateWatchedStats");
+const updateCodeStats = require("../../helpers/updateCodeStats");
 
-const addStatistics = async (req, res, next) => {
+const updateStats = async (req, res, next) => {
   const { sectionList } = data;
   try {
     const { section, app, time } = req.query;
     const dataId = await Result.findById(DB_ID);
 
     if (section === sectionList.w) {
-      const result = await updateWatchedDB(dataId, app);
+      const result = await updateWatchedStats(dataId, app);
       if (result) {
         res.json({
-          data: "Ok",
+          data: "watched",
         });
       }
     }
     if (section === sectionList.c) {
-      const result = await updateCodeDB(dataId, app, time);
+      const result = await updateCodeStats(dataId, app, time);
       if (result) {
         res.json({
-          data: "Ok",
+          data: "code",
         });
       }
     }
@@ -32,7 +32,7 @@ const addStatistics = async (req, res, next) => {
   }
 };
 
-module.exports = addStatistics;
+module.exports = updateStats;
 
 // const result = await Result.create({
 //   code: {

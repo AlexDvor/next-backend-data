@@ -1,6 +1,6 @@
 const { Result } = require("../../models");
 const { data } = require("../../helpers/constants");
-const { DB_ID } = process.env;
+const { DB_ID, ADMIN_PASSWORD } = process.env;
 const updateWatchedStats = require("../../helpers/updateWatchedStats");
 const updateCodeStats = require("../../helpers/updateCodeStats");
 const updateTotalViewPage = require("../../helpers/updateTotalViewPage");
@@ -8,41 +8,46 @@ const updateTotalViewPage = require("../../helpers/updateTotalViewPage");
 const updateStats = async (req, res, next) => {
   const { sectionList } = data;
   try {
-    const { section = "", app = "", time = "" } = req.query;
+    const { section = "", app = "", time = "", password = "" } = req.query;
+    const isAdmin = password === ADMIN_PASSWORD;
     const stats = await Result.findById(DB_ID);
-
-    if (section === sectionList.w) {
-      const result = await updateWatchedStats(stats, app, time);
-      if (result) {
-        res.json({
-          data: "watched",
-        });
+    if (!isAdmin) {
+      if (section === sectionList.w) {
+        const result = await updateWatchedStats(stats, app, time);
+        if (result) {
+          res.json({
+            data: "watched",
+          });
+        }
+        return;
       }
-      return;
-    }
 
-    if (section === sectionList.c) {
-      const result = await updateCodeStats(stats, app, time);
-      if (result) {
-        res.json({
-          data: "code",
-        });
+      if (section === sectionList.c) {
+        const result = await updateCodeStats(stats, app, time);
+        if (result) {
+          res.json({
+            data: "code",
+          });
+        }
+        return;
       }
-      return;
+
+      if (!section || !app || !time) {
+        const result = await updateTotalViewPage(stats);
+        if (result)
+          res.json({
+            message: "Updated total value",
+          });
+
+        return;
+      }
+
+      res.json({
+        message: "Bad request",
+      });
     }
-
-    if (!section || !app || !time) {
-      const result = await updateTotalViewPage(stats);
-      if (result)
-        res.json({
-          message: "Updated total value",
-        });
-
-      return;
-    }
-
     res.json({
-      message: "Bad request",
+      message: "You are admin ",
     });
   } catch (error) {
     next(error);

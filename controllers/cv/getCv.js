@@ -1,5 +1,5 @@
 const { Cv } = require("../../models");
-const fns = require("date-fns");
+const { ADMIN_PASSWORD } = process.env;
 
 const getCV = async (req, res, next) => {
   try {
@@ -9,10 +9,14 @@ const getCV = async (req, res, next) => {
   } catch (error) {
     next(error);
   } finally {
+    const { password = "" } = req.query;
     const { data } = req.body;
-    const res = await Cv.create({
-      data,
-    });
+    const isAdmin = password === ADMIN_PASSWORD;
+    if (!isAdmin) {
+      await Cv.create({
+        data,
+      });
+    }
   }
 };
 
